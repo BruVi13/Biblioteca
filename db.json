@@ -1,0 +1,185 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "123",
+      "role": "admin",
+      "fullName": "Administrador Principal",
+      "email": "admin@biblioteca.com"
+    },
+    {
+      "id": "2",
+      "username": "librarian",
+      "password": "123",
+      "role": "librarian",
+      "fullName": "Juan Bibliotecario",
+      "email": "juan@biblioteca.com"
+    },
+    {
+      "id": "3",
+      "username": "user1",
+      "password": "123",
+      "role": "member",
+      "fullName": "Ana Lectora",
+      "email": "ana@gmail.com"
+    },
+    {
+      "id": "558d",
+      "username": "Bruno",
+      "password": "123456",
+      "fullName": "Bruno Jose",
+      "email": "bruno_acuario13@hotmail.com",
+      "role": "admin"
+    }
+  ],
+  "books": [
+    {
+      "id": "1",
+      "title": "Cien Años de Soledad",
+      "authorId": "1",
+      "publisherId": "1",
+      "categoryId": "1",
+      "isbn": "978-84-376-0494-7",
+      "publicationYear": 1967,
+      "description": "Obra maestra de Gabriel García Márquez."
+    },
+    {
+      "id": "2",
+      "title": "El Quijote",
+      "authorId": "2",
+      "publisherId": "2",
+      "categoryId": "2",
+      "isbn": "978-84-204-1214-6",
+      "publicationYear": 1605,
+      "description": "El ingenioso hidalgo don Quijote de la Mancha."
+    },
+    {
+      "id": "c704",
+      "title": "La Galatea",
+      "authorId": "2",
+      "publisherId": "1",
+      "categoryId": "2",
+      "isbn": "978-84-670-7915-9",
+      "publicationYear": 1585,
+      "description": "La Galatea es una novela de Miguel de Cervantes publicada en 1585 en Alcalá de Henares con el título de Primera parte de La Galatea, dividida en seis libros."
+    }
+  ],
+  "authors": [
+    {
+      "id": "1",
+      "name": "Gabriel García Márquez",
+      "nationality": "Colombiana",
+      "birthYear": 1927
+    },
+    {
+      "id": "2",
+      "name": "Miguel de Cervantes",
+      "nationality": "Española",
+      "birthYear": 1547
+    }
+  ],
+  "publishers": [
+    {
+      "id": "1",
+      "name": "Editorial Sudamericana",
+      "country": "Argentina"
+    },
+    {
+      "id": "2",
+      "name": "Alfaguara",
+      "country": "España"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Realismo Mágico",
+      "description": "Género literario..."
+    },
+    {
+      "id": "2",
+      "name": "Clásicos",
+      "description": "Obras fundamentales..."
+    }
+  ],
+  "languages": [
+    {
+      "id": "1",
+      "name": "Español",
+      "code": "ES"
+    },
+    {
+      "id": "2",
+      "name": "Inglés",
+      "code": "EN"
+    }
+  ],
+  "locations": [
+    {
+      "id": "1",
+      "code": "A-101",
+      "description": "Estantería A, Nivel 1"
+    },
+    {
+      "id": "2",
+      "code": "B-202",
+      "description": "Estantería B, Nivel 2"
+    }
+  ],
+  "copies": [
+    {
+      "id": "1",
+      "bookId": "1",
+      "locationId": "1",
+      "barcode": "LIB-001",
+      "status": "available"
+    },
+    {
+      "id": "2",
+      "bookId": "1",
+      "locationId": "1",
+      "barcode": "LIB-002",
+      "status": "loaned"
+    }
+  ],
+  "loans": [
+    {
+      "id": "1",
+      "userId": "3",
+      "copyId": "2",
+      "loanDate": "2023-10-01",
+      "dueDate": "2023-10-15",
+      "returnDate": null,
+      "status": "active"
+    }
+  ],
+  "reservations": [
+    {
+      "id": "1",
+      "userId": "3",
+      "bookId": "2",
+      "reservationDate": "2023-10-05",
+      "status": "pending"
+    }
+  ],
+  "fines": [
+    {
+      "id": "1",
+      "userId": "3",
+      "loanId": "1",
+      "amount": 5,
+      "reason": "Retraso",
+      "status": "unpaid"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "1",
+      "userId": "3",
+      "bookId": "1",
+      "rating": 5,
+      "comment": "Excelente libro, muy recomendado."
+    }
+  ]
+}
