@@ -48,12 +48,6 @@ const Copies = () => {
         }
     };
 
-    // fetchDependencies is no longer needed separately if we init everything in fetchCopies, 
-    // but the original code called both on mount. 
-    // To keep it simple and consistent with how I fixed Books:
-    // I will merge fetching logic.
-    // However, for the Modal form, we might want to just setBooks/setLocations if they are not already set?
-    // Actually, simply removing fetchDependencies call from useEffect and letting fetchCopies handle everything is cleaner.
 
 
     const handleSubmit = async (e: FormEvent) => {
